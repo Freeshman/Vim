@@ -38,8 +38,7 @@ set   expandtab
 set   fileencodings=utf-8,gb2312,gbk,gb18030
 set   encoding=utf-8
 set   fileformat=unix
-set   foldenable
-set   foldmethod=marker
+set   nofoldenable
 set   guioptions-=T
 set   guioptions-=m
 set   guioptions-=r
@@ -248,7 +247,6 @@ set completeopt=longest,menu
 "}}}
 " KEY: {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map w :w!<cr>
 vmap <C-c> "+y
 "C，C++ //compile
 map <F7> :call CompileRunGcc()<CR>

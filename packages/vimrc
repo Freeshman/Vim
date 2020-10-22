@@ -167,7 +167,7 @@ autocmd BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=mark
 autocmd BufNewFile *.py,*.cpp,*.[ch],*.sh,*.java,*.{md,mdown,mkd,mkdn,markdown,mdwn} exec ":call SetTitle()" 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 "define a funtion[SetTitle]automatic a title
-func！ SetTitle()
+func! SetTitle()
     ".sh file
     if &filetype == 'sh'
         let line_num = 0

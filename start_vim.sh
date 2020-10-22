@@ -93,8 +93,8 @@ function Vim_config ()
         check_ctags=`ls -l /usr/bin/ | grep ctags|wc -l`
         if [[ "w$check_ctags" == "w0" ]]
         then
-            sudo tar -zxf ctags.tar.gz -C /usr/bin/
-            sudo chmod 755 /usr/bin/ctags
+            tar -zxf ctags.tar.gz -C ~/bin/
+            chmod 755 ~/bin/ctags
         fi
         if [[ -e ~/.bashrc  ]]
         then
